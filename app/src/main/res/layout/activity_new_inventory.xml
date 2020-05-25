@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".creatingProject.NewInventoryActivity">
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        android:hint="@string/input_project_number" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="340dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/name_your_new_project"
+        app:layout_constraintBottom_toTopOf="@+id/checkInventory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id" />
+
+    <Button
+        android:id="@+id/checkInventory"
+        android:layout_width="128dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="376dp"
+        android:text="@string/check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addInventory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/addInventory"
+        android:layout_width="130dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="375dp"
+        android:enabled="false"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkInventory"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+</androidx.constraintlayout.widget.ConstraintLayout>
